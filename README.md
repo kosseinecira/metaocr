@@ -26,8 +26,7 @@ This script performs a sequence of intelligent operations to extract book or doc
 
     ├── books/ # Folder containing input PDF files
     ├── output/ # Generated images and results
-    ├── loop_dir.py # Main Python script (algorithm)
-    ├── requirements.txt # Dependencies
+    ├── main.py # Main Python script (algorithm)
     └── README.md # This file
 
 ---
