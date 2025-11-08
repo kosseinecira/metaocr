@@ -1,3 +1,4 @@
+
 # 📘 PDF Title Extraction and Recognition Pipeline
 
 This project automates **title extraction** from PDF documents using **PaddleOCR** and **LayoutDetection** models.  
@@ -23,32 +24,32 @@ This script performs a sequence of intelligent operations to extract book or doc
 
 ## 🏗️ Project Structure
 
-├── books/ # Folder containing input PDF files
-├── output/ # Generated images and results
-├── loop_dir.py # Main Python script (algorithm)
-├── requirements.txt # Dependencies
-└── README.md # This file
+    ├── books/ # Folder containing input PDF files
+    ├── output/ # Generated images and results
+    ├── loop_dir.py # Main Python script (algorithm)
+    ├── requirements.txt # Dependencies
+    └── README.md # This file
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### Clone the repository
+    git clone https://github.com/kosseinecira/metaocr.git
+    cd metaocr
 
-```bash
-git clone https://github.com/kosseinecira/metaocr.git
-cd metaocr
-### 1. Run the script inside a container
-docker run --name paddleocr -v "%cd%:/paddle" --shm-size=8G -it paddlepaddle/paddle:3.0.0 /bin/bash
-docker start -ai paddleocr
-cd /paddle
-pip install "paddlex[ocr]"
-pip install -U "paddlepaddle>=2.6.0" "paddlex[ocr]>=3.0.0" paddleocr==3.3.0
-pip install pdfplumber
-## Usage
-```bash
-python main.py
+### Run the script inside a container
 
+    docker run --name paddleocr -v "%cd%:/paddle" --shm-size=8G -it paddlepaddle/paddle:3.0.0 /bin/bash
+    docker start -ai paddleocr
+    cd /paddle
+    pip install "paddlex[ocr]"
+    pip install -U "paddlepaddle>=2.6.0" "paddlex[ocr]>=3.0.0" paddleocr==3.3.0
+    pip install pdfplumber
+
+## ▶️ Usage
+    python main.py
+## Output
 output/
  ├── <PDF_NAME>/
  │   ├── first_page.jpg
