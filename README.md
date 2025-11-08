@@ -45,3 +45,12 @@ cd /paddle
 pip install "paddlex[ocr]"
 pip install -U "paddlepaddle>=2.6.0" "paddlex[ocr]>=3.0.0" paddleocr==3.3.0
 pip install pdfplumber
+## Usage
+```bash
+python main.py
+
+output/
+ ├── <PDF_NAME>/
+ │   ├── first_page.jpg
+ │   └── title.jpg
+
